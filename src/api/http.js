@@ -33,7 +33,7 @@ export const addTaskToApi = (task) => {
             apiKey: SUPABASE_API_KEY,
             Prefer: "return=representation",
         },
-    }).then((response) => response.json())
+    }).then((response) => response.json()).then(tasks => tasks[0])
 }
 
 /**

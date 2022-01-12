@@ -39,7 +39,7 @@ const TodoListPage = () => {
         addTaskToApi(task).then((savedTask) => {
             // Remplaçons le tableau de tâches actuel par une copie
             // qui contiendra en plus la nouvelle tâche :
-            setState([...state, savedTask[0]]);
+            setState([...state, savedTask]);
         })
     }
 
