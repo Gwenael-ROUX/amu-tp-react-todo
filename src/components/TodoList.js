@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 
 // Notez bien ici à quel point le composant TodoList est devenu
@@ -18,6 +20,8 @@ const TodoList = (props) => {
                         onChange={() => props.onTaskToggle(item.id)}
                     />
                     {item.text}
+
+                    <Link to={item.id + "/details"}>Details</Link>
                 </label>
             </li>)}
         </ul>
