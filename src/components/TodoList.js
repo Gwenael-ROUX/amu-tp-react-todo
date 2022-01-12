@@ -13,7 +13,7 @@ const TodoList = (props) => {
                 <label>
                     <input
                         type="checkbox"
-                        id="todo-${item.id}"
+                        id={item.id}
                         checked={item.done}
                         onChange={() => props.onTaskToggle(item.id)}
                     />
