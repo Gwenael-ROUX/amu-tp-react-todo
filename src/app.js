@@ -2,19 +2,8 @@
 import React from "react";
 // ReactDOM va permettre de créer le rendu correspondant dans le DOM HTML
 import ReactDOM from "react-dom";
+// On importe la fonction TodoList
+import TodoList from "./components/TodoList";
 
-/**
- * Créé et retourne un arbre d'éléments React
- * @returns React.DetailedReactHTMLElement
- */
-const Hello = () => {
-    return <div className="example-class example-class-2" id="lorem-id">
-        <p>
-            <strong>Hello </strong>
-            World
-        </p>
-    </div>;
-}
-
-// Imprime l'arbre renvoyé par hello() dans l'élément <main> du DOM HTML
-ReactDOM.render(<Hello />, document.querySelector('main'));
+// Imprime l'arbre renvoyé par TodoList() dans l'élément <main> du DOM HTML
+ReactDOM.render(<TodoList />, document.querySelector('main'));
